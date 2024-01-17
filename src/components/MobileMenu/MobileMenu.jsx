@@ -36,6 +36,9 @@ export const MobileMenu = () => {
             <li>
               <StyledLink href="">Skills</StyledLink>
             </li>
+            <li>
+              <StyledLink href="">Portfolio</StyledLink>
+            </li>
           </StyledList>
         </StyledBackdrop>
       )}
