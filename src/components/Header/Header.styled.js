@@ -10,6 +10,8 @@ export const StyledHeader = styled.header`
   height: var(--header-height);
   padding: 0 6px;
   border-bottom: 1px solid #343a46;
+  background-color: var(--primary-bg-color);
+  opacity: 99%;
 `;
 
 export const StyledButton = styled.button`

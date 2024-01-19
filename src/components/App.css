@@ -46,6 +46,6 @@ a {
   color: inherit;
 }
 
-.container {
-  padding: 0 20px;
+h1, h2, h3, h4, p {
+  margin: 0;
 }
