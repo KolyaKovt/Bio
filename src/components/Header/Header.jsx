@@ -2,10 +2,12 @@ import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 
 import { StyledHeader } from "./Header.styled";
 
-export const Header = () => {
+const Header = () => {
   return (
     <StyledHeader>
       <MobileMenu />
     </StyledHeader>
   );
 };
+
+export default Header;
