@@ -70,14 +70,21 @@ Error generating stack: `+o.message+`
 
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 15px;
+    gap: 8px;
   }
 `,gl=Ae(Av)`
   display: block;
-  padding: 8px 0;
+  padding: 8px 12px;
+  border-radius: 9999px;
 
+  &:hover,
+  &:focus {
+    background-color: var(--btn-focus-color);
+  }
+  
   &.active {
     color: var(--secondary-bg-color);
+    background-color: var(--btn-focus-color);
   }
 `,op=({closeMobileMenu:e})=>T.jsx("nav",{children:T.jsxs(Q0,{children:[T.jsx("li",{children:T.jsx(gl,{to:"/",onClick:e,children:"Home"})}),T.jsx("li",{children:T.jsx(gl,{to:"/hobbies",onClick:e,children:"Hobbies"})}),T.jsx("li",{children:T.jsx(gl,{to:"/skills",onClick:e,children:"Skills"})}),T.jsx("li",{children:T.jsx(gl,{to:"/portfolio",onClick:e,children:"Portfolio"})})]})}),K0=Ae.div`
   position: fixed;
@@ -97,11 +104,17 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
   height: var(--header-height);
   padding: 0 6px;
-  border-bottom: 1px solid #343a46;
+  /* border-bottom: 1px solid #343a46; */
   background-color: var(--primary-bg-color);
   opacity: 99%;
+  
+  @media screen and (max-width: 767px) {
+    border-bottom: 1px solid #343a46;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 0 20px;
@@ -119,7 +132,7 @@ Error generating stack: `+o.message+`
 
   &:hover,
   &:focus {
-    background-color: #2d323b;
+    background-color: var(--btn-focus-color);
   }
 `,X0=Ae.button`
   ${ip}
@@ -143,7 +156,17 @@ Error generating stack: `+o.message+`
     padding-bottom: 40px;
   }
 `,Sy=Ae.div`
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 50px;
+  }
 `,ki=Ae.h1`
   font-size: 36px;
   margin-bottom: 16px;
