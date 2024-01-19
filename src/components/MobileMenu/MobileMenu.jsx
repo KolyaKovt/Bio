@@ -12,15 +12,15 @@ export const MobileMenu = () => {
 
   const toggleIsMobileOpen = () => setIsMobileMenuOpen(prev => !prev);
 
+  const btnSvgHref = isMobileMenuOpen
+    ? "/icons.svg#close-menu"
+    : "/icons.svg#open-menu";
+
   return (
     <>
       <StyledButton type="button" onClick={toggleIsMobileOpen}>
         <StyledSvg>
-          {isMobileMenuOpen ? (
-            <use href="/icons.svg#close-menu"></use>
-          ) : (
-            <use href="/icons.svg#open-menu"></use>
-          )}
+          <use href={btnSvgHref}></use>
         </StyledSvg>
       </StyledButton>
 
