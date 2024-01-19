@@ -1,13 +1,4 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-
-export const StyledList = styled.ul`
-  font-size: 20px;
-`;
-export const StyledLink = styled(Link)`
-display: block;
-  padding: 8px 0;
-`;
 
 export const StyledBackdrop = styled.div`
   position: fixed;
@@ -17,4 +8,8 @@ export const StyledBackdrop = styled.div`
   height: calc(100% - var(--header-height));
   padding: 40px 60px;
   background-color: var(--primary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;

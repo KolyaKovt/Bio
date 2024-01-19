@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.header`
   position: sticky;
@@ -12,10 +11,13 @@ export const StyledHeader = styled.header`
   border-bottom: 1px solid #343a46;
   background-color: var(--primary-bg-color);
   opacity: 99%;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 20px;
+  }
 `;
 
-export const StyledButton = styled.button`
-  display: flex;
+const btnCss = css`
   margin: 0;
   width: 50px;
   height: 50px;
@@ -32,20 +34,19 @@ export const StyledButton = styled.button`
   }
 `;
 
+export const StyledButton = styled.button`
+  ${btnCss}
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
 export const StyledSvg = styled.svg`
   width: 100%;
   height: 100%;
 `;
 
-export const StyledGithubSvg = styled.svg`
-  height: 20px;
-  width: 20px;
-`;
-
-export const StyledLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
+export const StyledLink = styled.a`
+  ${btnCss}
 `;
