@@ -70,7 +70,25 @@ Error generating stack: `+o.message+`
 `,pl=sn(gv)`
 display: block;
   padding: 8px 0;
-`,E0=sn.button`
+`,E0=sn.div`
+  border-top: 1px solid #343a46;
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  height: calc(100% - var(--header-height));
+  padding: 40px 60px;
+  background-color: var(--primary-bg-color);
+`,x0=({isMobileMenuOpen:e,toggleIsMobileOpen:t})=>O.jsx(O.Fragment,{children:e&&O.jsx(E0,{children:O.jsxs(k0,{children:[O.jsx("li",{children:O.jsx(pl,{to:"/",onClick:t,children:"Home"})}),O.jsx("li",{children:O.jsx(pl,{to:"/hobbies",onClick:t,children:"Hobbies"})}),O.jsx("li",{children:O.jsx(pl,{to:"/skills",onClick:t,children:"Skills"})}),O.jsx("li",{children:O.jsx(pl,{to:"/portfolio",onClick:t,children:"Portfolio"})})]})})}),C0=sn.header`
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 6px;
+  background-color: var(--primary-bg-color);
+  color: rgb(235, 236, 240);
+`,_0=sn.button`
   display: flex;
   margin: 0;
   width: 50px;
@@ -86,25 +104,7 @@ display: block;
   &:focus {
     background-color: #2d323b;
   }
-`,x0=sn.svg`
+`,P0=sn.svg`
   width: 100%;
   height: 100%;
-`,C0=sn.div`
-  border-top: 1px solid #343a46;
-  position: fixed;
-  top: var(--header-height);
-  left: 0;
-  width: 100%;
-  height: calc(100% - var(--header-height));
-  padding: 40px 60px;
-  background-color: var(--primary-bg-color);
-`,_0=()=>{const[e,t]=_.useState(!1),n=()=>t(l=>!l),r=e?"/icons.svg#close-menu":"/icons.svg#open-menu";return O.jsxs(O.Fragment,{children:[O.jsx(E0,{type:"button",onClick:n,children:O.jsx(x0,{children:O.jsx("use",{href:r})})}),e&&O.jsx(C0,{children:O.jsxs(k0,{children:[O.jsx("li",{children:O.jsx(pl,{to:"/",onClick:n,children:"Home"})}),O.jsx("li",{children:O.jsx(pl,{to:"/hobbies",onClick:n,children:"Hobbies"})}),O.jsx("li",{children:O.jsx(pl,{to:"/skills",onClick:n,children:"Skills"})}),O.jsx("li",{children:O.jsx(pl,{to:"/portfolio",onClick:n,children:"Portfolio"})})]})})]})},P0=sn.header`
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  height: var(--header-height);
-  padding: 0 6px;
-  background-color: var(--primary-bg-color);
-  color: rgb(235, 236, 240);
-`,N0=()=>O.jsx(P0,{children:O.jsx(_0,{})});function R0(){return O.jsxs(O.Fragment,{children:[O.jsx(N0,{}),O.jsx(iv,{})]})}const z0=()=>O.jsx("div",{children:"Home"}),T0=()=>O.jsx("div",{children:"Hobbies"}),L0=()=>O.jsx("div",{children:"Skills"}),O0=()=>O.jsx("div",{children:"Portfolio"}),$0=()=>O.jsx(sv,{children:O.jsxs(fn,{path:"/",element:O.jsx(R0,{}),children:[O.jsx(fn,{index:!0,element:O.jsx(z0,{})}),O.jsx(fn,{path:"/hobbies",element:O.jsx(T0,{})}),O.jsx(fn,{path:"/skills",element:O.jsx(L0,{})}),O.jsx(fn,{path:"/portfolio",element:O.jsx(O0,{})})]})});ci.createRoot(document.getElementById("root")).render(O.jsx(qt.StrictMode,{children:O.jsx(hv,{children:O.jsx($0,{})})}));
+`,N0=()=>{const[e,t]=_.useState(!1),n=()=>t(l=>!l),r=e?"/icons.svg#close-menu":"/icons.svg#open-menu";return O.jsxs(C0,{children:[O.jsx(_0,{type:"button",onClick:n,children:O.jsx(P0,{children:O.jsx("use",{href:r})})}),O.jsx(x0,{toggleIsMobileOpen:n,isMobileMenuOpen:e})]})};function R0(){return O.jsxs(O.Fragment,{children:[O.jsx(N0,{}),O.jsx("main",{children:O.jsx(iv,{})})]})}const z0=()=>O.jsx("div",{className:"container",children:"Home"}),T0=()=>O.jsx("div",{children:"Hobbies"}),L0=()=>O.jsx("div",{children:"Skills"}),O0=()=>O.jsx("div",{children:"Portfolio"}),$0=()=>O.jsx(sv,{children:O.jsxs(fn,{path:"/",element:O.jsx(R0,{}),children:[O.jsx(fn,{index:!0,element:O.jsx(z0,{})}),O.jsx(fn,{path:"/hobbies",element:O.jsx(T0,{})}),O.jsx(fn,{path:"/skills",element:O.jsx(L0,{})}),O.jsx(fn,{path:"/portfolio",element:O.jsx(O0,{})})]})});ci.createRoot(document.getElementById("root")).render(O.jsx(qt.StrictMode,{children:O.jsx(hv,{children:O.jsx($0,{})})}));
