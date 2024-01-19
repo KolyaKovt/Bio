@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
@@ -39,4 +40,15 @@ export const StyledH2 = styled.h2`
 export const StyledP = styled.p`
   font-size: 20px;
   line-height: 32.5px;
+  margin-bottom: 16px;
+`;
+
+export const StyledImg = styled.img`
+  border-radius: 10px;
+`;
+
+export const StyledLink = styled(Link)`
+  margin-bottom: 30px;
+  color: #4162fd;
+  text-decoration: underline;
 `;

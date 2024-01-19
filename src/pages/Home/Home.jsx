@@ -1,11 +1,27 @@
+import { useState } from "react";
 import Section from "../../components/Section/Section";
 import {
   StyledH1,
   StyledH2,
+  StyledImg,
   StyledP,
 } from "../../components/Section/Section.styled";
 
 const Home = () => {
+  const [age] = useState(() => {
+    const currentDate = new Date();
+    const birthDate = new Date("2007-05-22");
+
+    const timeDifference = currentDate - birthDate;
+    const seconds = Math.floor(timeDifference / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+    const years = Math.floor(days / 365.25);
+
+    return years;
+  });
+
   return (
     <>
       <Section>
@@ -17,7 +33,11 @@ const Home = () => {
       </Section>
       <Section>
         <StyledH2>So who am I?</StyledH2>
-        <StyledP>My name is Kolya. I'm 16 and I'm from Ukraine.</StyledP>
+        <StyledP>
+          My name is Kolya. I'm {age} and I'm from Kharkiv (Ukraine). I live in
+          Netherladns. It's a beatiful country in the western Europe.
+        </StyledP>
+        <StyledImg src={"/selfie.jpg"} alt="me" width={280} />
       </Section>
     </>
   );
