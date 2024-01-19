@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledList = styled.ul`
   font-size: 20px;
 `;
-export const StyledLink = styled.a`
+export const StyledLink = styled(Link)`
 display: block;
   padding: 8px 0;
 `;
