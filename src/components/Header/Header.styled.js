@@ -6,11 +6,17 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
   height: var(--header-height);
   padding: 0 6px;
-  border-bottom: 1px solid #343a46;
+  /* border-bottom: 1px solid #343a46; */
   background-color: var(--primary-bg-color);
   opacity: 99%;
+  
+  @media screen and (max-width: 767px) {
+    border-bottom: 1px solid #343a46;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 0 20px;
@@ -30,7 +36,7 @@ const btnCss = css`
 
   &:hover,
   &:focus {
-    background-color: #2d323b;
+    background-color: var(--btn-focus-color);
   }
 `;
 

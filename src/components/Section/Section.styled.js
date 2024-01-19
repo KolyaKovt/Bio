@@ -13,7 +13,17 @@ export const StyledSection = styled.div`
 `;
 
 export const StyledContainer = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 50px;
+  }
 `;
 
 export const StyledH1 = styled.h1`

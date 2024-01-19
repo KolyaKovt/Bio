@@ -4,7 +4,7 @@ import {
   StyledHeader,
   StyledButton,
   StyledSvg,
-  StyledLink,
+  StyledLink
 } from "./Header.styled";
 import Navigation from "../Navigation/Navigation.jsx";
 import Media from "react-media";
