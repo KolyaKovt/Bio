@@ -7,32 +7,32 @@
 
 @font-face {
   font-family: "PalanquinDark";
-  src: url("/PalanquinDark-Regular.woff") format("woff");
+  src: url("/PalanquinDark/PalanquinDark-Regular.woff") format("woff");
   font-weight: 400; /* Normal weight */
 }
 
 @font-face {
   font-family: "PalanquinDark";
-  src: url("/PalanquinDark-Medium.woff") format("woff");
+  src: url("/PalanquinDark/PalanquinDark-Medium.woff") format("woff");
   font-weight: 500; /* Medium weight */
 }
 
 @font-face {
   font-family: "PalanquinDark";
-  src: url("/PalanquinDark-SemiBold.woff") format("woff");
+  src: url("/PalanquinDark/PalanquinDark-SemiBold.woff") format("woff");
   font-weight: 600; /* Semi-bold weight */
 }
 
 @font-face {
   font-family: "PalanquinDark";
-  src: url("/PalanquinDark-Bold.woff") format("woff");
+  src: url("/PalanquinDark/PalanquinDark-Bold.woff") format("woff");
   font-weight: 700; /* Bold weight */
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--paragraph-color);
-  font-family: "PalanquinDark";
+  font-family: "PalanquinDark", sans-serif;
 }
 
 ul {
