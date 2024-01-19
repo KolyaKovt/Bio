@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 
-import { StyledHeader, StyledButton, StyledSvg } from "./Header.styled";
+import {
+  StyledHeader,
+  StyledButton,
+  StyledSvg,
+  StyledLink,
+  StyledGithubSvg,
+} from "./Header.styled";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +25,11 @@ const Header = () => {
           <use href={btnSvgHref}></use>
         </StyledSvg>
       </StyledButton>
+      <StyledLink to={"https://github.com/KolyaKovt"}>
+        <StyledGithubSvg>
+          <use href="/icons.svg#github"></use>
+        </StyledGithubSvg>
+      </StyledLink>
 
       <MobileMenu
         toggleIsMobileOpen={toggleIsMobileOpen}

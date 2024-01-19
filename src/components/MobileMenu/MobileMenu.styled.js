@@ -10,7 +10,6 @@ display: block;
 `;
 
 export const StyledBackdrop = styled.div`
-  border-top: 1px solid #343a46;
   position: fixed;
   top: var(--header-height);
   left: 0;
