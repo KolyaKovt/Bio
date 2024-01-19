@@ -10,13 +10,10 @@ export const StyledHeader = styled.header`
   margin: 0 auto;
   height: var(--header-height);
   padding: 0 6px;
-  /* border-bottom: 1px solid #343a46; */
+  border-bottom: ${({ $isBorder }) =>
+    $isBorder ? "1px solid #343a46" : "none"};
   background-color: var(--primary-bg-color);
   opacity: 99%;
-  
-  @media screen and (max-width: 767px) {
-    border-bottom: 1px solid #343a46;
-  }
 
   @media screen and (min-width: 768px) {
     padding: 0 20px;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.div`
+export const StyledSection = styled.section`
   padding: 20px 0;
 
   &:first-child {
@@ -13,7 +13,7 @@ export const StyledSection = styled.div`
 `;
 
 export const StyledContainer = styled.div`
-  max-width: 1440px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -28,6 +28,11 @@ export const StyledContainer = styled.div`
 
 export const StyledH1 = styled.h1`
   font-size: 36px;
+  margin-bottom: 16px;
+`;
+
+export const StyledH2 = styled.h2`
+  font-size: 28px;
   margin-bottom: 16px;
 `;
 

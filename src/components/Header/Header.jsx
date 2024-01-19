@@ -1,15 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 import {
   StyledHeader,
   StyledButton,
   StyledSvg,
-  StyledLink
+  StyledLink,
 } from "./Header.styled";
 import Navigation from "../Navigation/Navigation.jsx";
 import Media from "react-media";
 
 const Header = () => {
+  const [isBorder, setIsBorder] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsBorder(true);
+      } else {
+        setIsBorder(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleIsMobileOpen = () => setIsMobileMenuOpen(prev => !prev);
@@ -19,9 +34,9 @@ const Header = () => {
   const btnSvgHref = isMobileMenuOpen
     ? "/icons.svg#close-menu"
     : "/icons.svg#open-menu";
-
+  console.log(isBorder);
   return (
-    <StyledHeader>
+    <StyledHeader $isBorder={isBorder || isMobileMenuOpen}>
       <StyledButton type="button" onClick={toggleIsMobileOpen}>
         <StyledSvg>
           <use href={btnSvgHref}></use>
