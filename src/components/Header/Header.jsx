@@ -1,11 +1,29 @@
+import { useState } from "react";
 import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 
-import { StyledHeader } from "./Header.styled";
+import { StyledHeader, StyledButton, StyledSvg } from "./Header.styled";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleIsMobileOpen = () => setIsMobileMenuOpen(prev => !prev);
+
+  const btnSvgHref = isMobileMenuOpen
+    ? "/icons.svg#close-menu"
+    : "/icons.svg#open-menu";
+
   return (
     <StyledHeader>
-      <MobileMenu />
+      <StyledButton type="button" onClick={toggleIsMobileOpen}>
+        <StyledSvg>
+          <use href={btnSvgHref}></use>
+        </StyledSvg>
+      </StyledButton>
+
+      <MobileMenu
+        toggleIsMobileOpen={toggleIsMobileOpen}
+        isMobileMenuOpen={isMobileMenuOpen}
+      />
     </StyledHeader>
   );
 };

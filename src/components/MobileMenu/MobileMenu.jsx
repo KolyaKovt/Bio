@@ -1,29 +1,12 @@
-import { useState } from "react";
 import {
   StyledBackdrop,
-  StyledButton,
   StyledLink,
   StyledList,
-  StyledSvg,
 } from "./MobileMenu.styled";
 
-export const MobileMenu = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleIsMobileOpen = () => setIsMobileMenuOpen(prev => !prev);
-
-  const btnSvgHref = isMobileMenuOpen
-    ? "/icons.svg#close-menu"
-    : "/icons.svg#open-menu";
-
+export const MobileMenu = ({ isMobileMenuOpen, toggleIsMobileOpen }) => {
   return (
     <>
-      <StyledButton type="button" onClick={toggleIsMobileOpen}>
-        <StyledSvg>
-          <use href={btnSvgHref}></use>
-        </StyledSvg>
-      </StyledButton>
-
       {isMobileMenuOpen && (
         <StyledBackdrop>
           <StyledList>
