@@ -1,8 +1,8 @@
 :root {
   --primary-bg-color: #23272f;
-  --secondary-bg-color: #149ECA;
+  --secondary-bg-color: #149eca;
   --header-height: 64px;
-  --title-color: #e0e1e4;
+  --title-color: #f6f7f9;
   --paragraph-color: rgb(235, 236, 240);
   --btn-focus-color: #2d323b;
 }
@@ -48,11 +48,17 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
-img {
+img,
+video,
+iframe {
   display: block;
   max-width: 100%;
 }

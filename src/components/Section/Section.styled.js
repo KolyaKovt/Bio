@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledSection = styled.section`
   padding: 20px 0;
@@ -14,16 +14,16 @@ export const StyledSection = styled.section`
 `;
 
 export const StyledContainer = styled.div`
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 375px) {
     padding: 0 40px;
   }
 
-  @media screen and (min-width: 1280px) {
-    padding: 0 50px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
   }
 `;
 
@@ -45,12 +45,20 @@ export const StyledP = styled.p`
   margin-bottom: 16px;
 `;
 
-export const StyledImg = styled.img`
+const borderRadius = css`
   border-radius: 10px;
+`;
+
+export const StyledImg = styled.img`
+  ${borderRadius}
 `;
 
 export const StyledLink = styled(Link)`
   margin-bottom: 30px;
   color: #4162fd;
   text-decoration: underline;
+`;
+
+export const StyledVideo = styled.iframe`
+  ${borderRadius}
 `;

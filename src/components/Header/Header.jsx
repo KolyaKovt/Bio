@@ -30,7 +30,7 @@ const Header = () => {
   const btnSvgHref = isMobileMenuOpen
     ? "/icons.svg#close-menu"
     : "/icons.svg#open-menu";
-  console.log(isBorder);
+
   return (
     <StyledHeader $isBorder={isBorder || isMobileMenuOpen}>
       <StyledButton type="button" onClick={toggleIsMobileOpen}>
