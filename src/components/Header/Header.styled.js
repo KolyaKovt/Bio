@@ -21,6 +21,7 @@ export const StyledHeader = styled.header`
 `;
 
 const btnCss = css`
+  display: inline-block;
   margin: 0;
   width: 50px;
   height: 50px;
@@ -28,8 +29,6 @@ const btnCss = css`
   border: none;
   border-radius: 50%;
   padding: 14px;
-  stroke: rgb(235, 236, 240);
-  fill: #149eca;
 
   &:hover,
   &:focus {
@@ -39,6 +38,8 @@ const btnCss = css`
 
 export const StyledButton = styled.button`
   ${btnCss}
+  stroke: rgb(235, 236, 240);
+  fill: #149eca;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -52,4 +53,5 @@ export const StyledSvg = styled.svg`
 
 export const StyledLink = styled.a`
   ${btnCss}
+  fill: rgb(235, 236, 240);
 `;

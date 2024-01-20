@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
 import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
-import {
-  StyledHeader,
-  StyledButton,
-  StyledSvg,
-  StyledLink,
-} from "./Header.styled";
+import { StyledHeader, StyledButton, StyledSvg } from "./Header.styled";
 import Navigation from "../Navigation/Navigation.jsx";
 import Media from "react-media";
+import Socials from "../Socials/Socials.jsx";
 
 const Header = () => {
   const [isBorder, setIsBorder] = useState(false);
@@ -45,11 +41,7 @@ const Header = () => {
 
       <Media query={"(min-width: 768px)"} render={() => <Navigation />} />
 
-      <StyledLink href={"https://github.com/KolyaKovt"} target="_blank">
-        <StyledSvg>
-          <use href="/icons.svg#github"></use>
-        </StyledSvg>
-      </StyledLink>
+      <Socials />
 
       <MobileMenu
         isMobileMenuOpen={isMobileMenuOpen}
