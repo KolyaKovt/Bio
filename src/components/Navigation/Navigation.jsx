@@ -16,7 +16,7 @@ const Navigation = ({ closeMobileMenu }) => {
         </li>
         <li>
           <StyledLink to="/skills" onClick={closeMobileMenu}>
-            Skills
+            Skills & Experience
           </StyledLink>
         </li>
         <li>

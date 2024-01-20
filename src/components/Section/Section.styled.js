@@ -53,12 +53,28 @@ export const StyledImg = styled.img`
   ${borderRadius}
 `;
 
-export const StyledLink = styled(Link)`
+const linkStyles = css`
   margin-bottom: 30px;
   color: #4162fd;
   text-decoration: underline;
 `;
 
+export const StyledLink = styled(Link)`
+  ${linkStyles}
+`;
+
+export const StyledA = styled.a`
+  ${linkStyles}
+`;
+
 export const StyledVideo = styled.iframe`
   ${borderRadius}
+`;
+
+export const StyledList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: disc;
+  padding-left: 40px;
 `;
