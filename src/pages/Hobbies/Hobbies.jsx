@@ -40,7 +40,7 @@ const Hobbies = () => {
         <picture>
           <source srcSet="avior-mobile.jpg" media="(max-width: 767px)" />
 
-          <StyledImg src="/avior.jpg" alt="my team" width={1000} />
+          <StyledImg src="/avior.jpg" alt="my team" width={600} />
         </picture>
       </Section>
       <Section>
