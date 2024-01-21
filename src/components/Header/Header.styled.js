@@ -8,6 +8,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   height: var(--header-height);
   padding: 0 6px;

@@ -38,6 +38,15 @@ body {
   transition: all 200ms linear;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 ul {
   list-style: none;
   padding: 0;

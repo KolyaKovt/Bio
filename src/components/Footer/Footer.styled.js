@@ -8,5 +8,6 @@ export const StyledFooter = styled.footer`
   border-top: 1px solid var(--border-color);
   padding: 0 40px;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 `;
