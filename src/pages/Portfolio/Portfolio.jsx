@@ -62,9 +62,9 @@ const Portfolio = () => {
           .
         </StyledP>
         <StyledImg
-          src="/Portfolio/web-studio.png"
+          src="/Portfolio/web-studio.jpg"
           alt="web studio"
-          onClick={() => onImgClick("/Portfolio/web-studio.png", "web studio")}
+          onClick={() => onImgClick("/Portfolio/web-studio.jpg", "web studio")}
         />
       </Section>
       <Section>
@@ -88,9 +88,9 @@ const Portfolio = () => {
           .
         </StyledP>
         <StyledImg
-          src="/Portfolio/jachts-jet.png"
+          src="/Portfolio/jachts-jet.jpg"
           alt="jachts jet"
-          onClick={() => onImgClick("/Portfolio/jachts-jet.png", "jachts jet")}
+          onClick={() => onImgClick("/Portfolio/jachts-jet.jpg", "jachts jet")}
         />
       </Section>
       <Section>
@@ -115,10 +115,10 @@ const Portfolio = () => {
           .
         </StyledP>
         <StyledImg
-          src="/Portfolio/food-bootique.png"
+          src="/Portfolio/food-bootique.jpg"
           alt="food bootique"
           onClick={() =>
-            onImgClick("/Portfolio/food-bootique.png", "food bootique")
+            onImgClick("/Portfolio/food-bootique.jpg", "food bootique")
           }
         />
       </Section>

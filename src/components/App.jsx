@@ -1,19 +1,49 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import Loading from "../components/Loading/Loading";
 import Layout from "./Layout/Layout";
-import Home from "../pages/Home/Home";
-import Hobbies from "../pages/Hobbies/Hobbies";
-import Skills from "../pages/Skills/Skills";
-import Portfolio from "../pages/Portfolio/Portfolio";
+const Home = lazy(() => import("../pages/Home/Home"));
+const Hobbies = lazy(() => import("../pages/Hobbies/Hobbies"));
+const Skills = lazy(() => import("../pages/Skills/Skills"));
+const Portfolio = lazy(() => import("../pages/Portfolio/Portfolio"));
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/hobbies" element={<Hobbies />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route
+          index
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/hobbies"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Hobbies />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/skills"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Skills />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/portfolio"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Portfolio />
+            </Suspense>
+          }
+        />
       </Route>
     </Routes>
   );
