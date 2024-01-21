@@ -3,10 +3,11 @@ import { NavLink } from "react-router-dom";
 
 export const StyledList = styled.ul`
   font-size: 20px;
+  display: flex;
+  gap: 8px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 8px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 `;
 
