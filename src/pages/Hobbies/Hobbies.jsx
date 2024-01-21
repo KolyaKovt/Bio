@@ -37,7 +37,11 @@ const Hobbies = () => {
           playing volleyball. I enjoy sports in general, but volleyball holds a
           special place for me.
         </StyledP>
-        <StyledImg src="/avior.jpg" alt="my team" width={1000} />
+        <picture>
+          <source srcSet="avior-mobile.jpg" media="(max-width: 767px)" />
+
+          <StyledImg src="/avior.jpg" alt="my team" width={1000} />
+        </picture>
       </Section>
       <Section>
         <StyledH2>Programming💻</StyledH2>

@@ -62,7 +62,7 @@ const Portfolio = () => {
           .
         </StyledP>
         <StyledImg
-          src="/Portfolio/web-studio.jpg"
+          src="/Portfolio/web-studio-mobile.jpg"
           alt="web studio"
           onClick={() => onImgClick("/Portfolio/web-studio.jpg", "web studio")}
         />
@@ -88,7 +88,7 @@ const Portfolio = () => {
           .
         </StyledP>
         <StyledImg
-          src="/Portfolio/jachts-jet.jpg"
+          src="/Portfolio/jachts-jet-mobile.jpg"
           alt="jachts jet"
           onClick={() => onImgClick("/Portfolio/jachts-jet.jpg", "jachts jet")}
         />
@@ -114,8 +114,9 @@ const Portfolio = () => {
           </StyledA>
           .
         </StyledP>
+
         <StyledImg
-          src="/Portfolio/food-bootique.jpg"
+          src="/Portfolio/food-bootique-mobile.jpg"
           alt="food bootique"
           onClick={() =>
             onImgClick("/Portfolio/food-bootique.jpg", "food bootique")
