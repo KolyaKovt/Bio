@@ -17,7 +17,11 @@ const MobileMenuBtn = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
     : "/icons.svg#open-menu";
 
   return (
-    <StyledButton type="button" onClick={toggleIsMobileOpen}>
+    <StyledButton
+      type="button"
+      onClick={toggleIsMobileOpen}
+      aria-label="toggle mobile menu"
+    >
       <StyledSvg>
         <use href={btnSvgHref}></use>
       </StyledSvg>
