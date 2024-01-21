@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 import { StyledHeader, StyledButton, StyledSvg } from "./Header.styled";
 import Navigation from "../Navigation/Navigation.jsx";
@@ -7,6 +7,16 @@ import Socials from "../Socials/Socials.jsx";
 
 const Header = () => {
   const [isBorder, setIsBorder] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const enableScroll = () => {
+    document.body.style.overflow = "";
+  };
+
+  const closeMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(false);
+    enableScroll();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,11 +31,27 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth >= 768) {
+        closeMobileMenu();
+      }
+    };
 
-  const toggleIsMobileOpen = () => setIsMobileMenuOpen(prev => !prev);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, [closeMobileMenu]);
 
-  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+  const toggleScroll = () => {
+    if (document.body.style.overflow !== "hidden") {
+      document.body.style.overflow = "hidden";
+    } else document.body.style.overflow = "";
+  };
+
+  const toggleIsMobileOpen = () => {
+    setIsMobileMenuOpen(prev => !prev);
+    toggleScroll();
+  };
 
   const btnSvgHref = isMobileMenuOpen
     ? "/icons.svg#close-menu"
