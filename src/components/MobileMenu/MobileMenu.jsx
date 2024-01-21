@@ -3,7 +3,6 @@ import Navigation from "../Navigation/Navigation";
 import { StyledBackdrop } from "./MobileMenu.styled";
 
 export const MobileMenu = ({
-  isMobileMenuOpen,
   setIsMobileMenuOpen,
   setIsBorder,
 }) => {
@@ -41,12 +40,8 @@ export const MobileMenu = ({
   }, [closeMobileMenu]);
 
   return (
-    <>
-      {isMobileMenuOpen && (
-        <StyledBackdrop>
-          <Navigation closeMobileMenu={closeMobileMenu} />
-        </StyledBackdrop>
-      )}
-    </>
+    <StyledBackdrop>
+      <Navigation closeMobileMenu={closeMobileMenu} />
+    </StyledBackdrop>
   );
 };

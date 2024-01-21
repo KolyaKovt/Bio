@@ -21,11 +21,13 @@ const Header = () => {
 
       <SocialsAndTheme isTheme={true} />
 
-      <MobileMenu
-        isMobileMenuOpen={isMobileMenuOpen}
-        setIsMobileMenuOpen={setIsMobileMenuOpen}
-        setIsBorder={setIsBorder}
-      />
+      {isMobileMenuOpen && (
+        <MobileMenu
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+          setIsBorder={setIsBorder}
+        />
+      )}
     </StyledHeader>
   );
 };
