@@ -15,6 +15,7 @@ const Header = () => {
       <MobileMenuBtn
         isMobileMenuOpen={isMobileMenuOpen}
         setIsMobileMenuOpen={setIsMobileMenuOpen}
+        aria-label="toggle mobile menu"
       />
 
       <Media query={"(min-width: 768px)"} render={() => <Navigation />} />

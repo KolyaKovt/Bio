@@ -49,7 +49,7 @@ export const SocialsAndTheme = ({ isTheme = false }) => {
   return (
     <div>
       {isTheme && (
-        <StyledThemeBtn onClick={toggleTheme}>
+        <StyledThemeBtn onClick={toggleTheme} aria-label="toggle theme">
           <StyledSvg>
             <use href={themeSvg}></use>
           </StyledSvg>
@@ -58,12 +58,17 @@ export const SocialsAndTheme = ({ isTheme = false }) => {
       <StyledLink
         href={"https://www.linkedin.com/in/mykola-kovtunets-57081329b/"}
         target="_blank"
+        aria-label="linkedin"
       >
         <StyledSvg>
           <use href="/icons.svg#linkedin"></use>
         </StyledSvg>
       </StyledLink>
-      <StyledLink href={"https://github.com/KolyaKovt"} target="_blank">
+      <StyledLink
+        href={"https://github.com/KolyaKovt"}
+        target="_blank"
+        aria-label="github"
+      >
         <StyledSvg>
           <use href="/icons.svg#github"></use>
         </StyledSvg>
