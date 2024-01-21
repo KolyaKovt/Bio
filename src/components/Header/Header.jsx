@@ -3,7 +3,7 @@ import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 import { StyledHeader } from "./Header.styled";
 import Navigation from "../Navigation/Navigation.jsx";
 import Media from "react-media";
-import Socials from "../Socials/Socials.jsx";
+import { SocialsAndTheme } from "../SocialsAndTheme/SocialsAndTheme.jsx";
 import MobileMenuBtn from "../MobileMenuBtn/MobileMenuBtn.jsx";
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
 
       <Media query={"(min-width: 768px)"} render={() => <Navigation />} />
 
-      <Socials />
+      <SocialsAndTheme isTheme={true} />
 
       <MobileMenu
         isMobileMenuOpen={isMobileMenuOpen}

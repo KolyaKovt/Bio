@@ -28,13 +28,11 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledH1 = styled.h1`
-  color: var(--title-color);
   font-size: 36px;
   margin-bottom: 16px;
 `;
 
 export const StyledH2 = styled.h2`
-  color: var(--title-color);
   font-size: 28px;
   margin-bottom: 16px;
 `;

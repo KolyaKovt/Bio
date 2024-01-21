@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.header`
-z-index: 1000;
+  z-index: 1000;
   position: sticky;
   top: 0;
   display: flex;
@@ -12,9 +12,14 @@ z-index: 1000;
   height: var(--header-height);
   padding: 0 6px;
   border-bottom: ${({ $isBorder }) =>
-    $isBorder ? "1px solid #343a46" : "none"};
+    $isBorder ? "1px solid var(--border-color)" : "none"};
+  box-shadow: ${({ $isBorder }) =>
+    $isBorder
+      ? "0 16px 32px -16px rgba(0, 0, 0, 0.1);"
+      : "none"};
   background-color: var(--primary-bg-color);
   opacity: 99%;
+  transition: all 200ms linear;
 
   @media screen and (min-width: 768px) {
     padding: 0 20px;
@@ -30,6 +35,7 @@ const btnCss = css`
   border: none;
   border-radius: 50%;
   padding: 14px;
+  fill: var(--text-color);
 
   &:hover,
   &:focus {
@@ -39,8 +45,7 @@ const btnCss = css`
 
 export const StyledButton = styled.button`
   ${btnCss}
-  stroke: rgb(235, 236, 240);
-  fill: #149eca;
+  stroke: var(--text-color);
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -54,5 +59,8 @@ export const StyledSvg = styled.svg`
 
 export const StyledLink = styled.a`
   ${btnCss}
-  fill: rgb(235, 236, 240);
+`;
+
+export const StyledThemeBtn = styled.button`
+  ${btnCss}
 `;

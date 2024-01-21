@@ -1,11 +1,11 @@
-import Socials from "../Socials/Socials";
+import { SocialsAndTheme } from "../SocialsAndTheme/SocialsAndTheme";
 import { StyledFooter } from "./Footer.styled";
 
 const Footer = () => {
   return (
     <StyledFooter>
       <p>&#169; KolyaKovt</p>
-      <Socials />
+      <SocialsAndTheme />
     </StyledFooter>
   );
 };
