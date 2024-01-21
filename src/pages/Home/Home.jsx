@@ -6,20 +6,11 @@ import {
   StyledImg,
   StyledP,
 } from "../../components/Section/Section.styled";
+import { countBirthYear } from "../../helpers/count-birth-year";
 
 const Home = () => {
   const [age] = useState(() => {
-    const currentDate = new Date();
-    const birthDate = new Date("2007-05-22");
-
-    const timeDifference = currentDate - birthDate;
-    const seconds = Math.floor(timeDifference / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
-    const years = Math.floor(days / 365.25);
-
-    return years;
+    return countBirthYear("2007-05-22");
   });
 
   return (

@@ -15,6 +15,7 @@ export const StyledLink = styled(NavLink)`
   display: block;
   padding: 8px 12px;
   border-radius: 9999px;
+  transition: background-color 200ms linear;
 
   &:hover,
   &:focus {

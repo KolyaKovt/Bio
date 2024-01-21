@@ -20,7 +20,7 @@ export const StyledHeader = styled.header`
       : "none"};
   background-color: var(--primary-bg-color);
   opacity: 99%;
-  transition: all 200ms linear;
+  transition: var(--theme-transition-properties);
 
   @media screen and (min-width: 768px) {
     padding: 0 20px;
@@ -37,6 +37,7 @@ const btnCss = css`
   border-radius: 50%;
   padding: 14px;
   fill: var(--text-color);
+  transition: var(--theme-transition-properties);
 
   &:hover,
   &:focus {

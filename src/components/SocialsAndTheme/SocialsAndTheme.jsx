@@ -44,7 +44,7 @@ export const SocialsAndTheme = ({ isTheme = false }) => {
     else setTheme("dark");
   };
 
-  const themeSvg = theme === "dark" ? "/icons.svg#moon" : "/icons.svg#sun";
+  const themeSvg = theme === "dark" ? "/icons.svg#sun" : "/icons.svg#moon";
 
   return (
     <div>
