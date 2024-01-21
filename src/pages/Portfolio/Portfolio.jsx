@@ -18,15 +18,17 @@ const Portfolio = () => {
     };
 
     const instance = basicLightbox.create(
-    `
+      `
       <img src="${url}" alt="${alt}" />
     `,
       {
         onShow: () => {
           document.addEventListener("keydown", closeModal);
+          document.body.style.overflow = "hidden";
         },
         onClose: () => {
           document.removeEventListener("keydown", closeModal);
+          document.body.style.overflow = "";
         },
       }
     );
