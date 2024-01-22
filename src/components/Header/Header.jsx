@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MobileMenu } from "../MobileMenu/MobileMenu.jsx";
 import { StyledHeader } from "./Header.styled";
 import Navigation from "../Navigation/Navigation.jsx";
@@ -9,6 +9,19 @@ import MobileMenuBtn from "../MobileMenuBtn/MobileMenuBtn.jsx";
 const Header = () => {
   const [isBorder, setIsBorder] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsBorder(true);
+      } else {
+        setIsBorder(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [setIsBorder]);
 
   return (
     <StyledHeader $isBorder={isBorder || isMobileMenuOpen}>
@@ -25,7 +38,6 @@ const Header = () => {
         <MobileMenu
           isMobileMenuOpen={isMobileMenuOpen}
           setIsMobileMenuOpen={setIsMobileMenuOpen}
-          setIsBorder={setIsBorder}
         />
       )}
     </StyledHeader>

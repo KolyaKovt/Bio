@@ -4,7 +4,6 @@ import { StyledBackdrop } from "./MobileMenu.styled";
 
 export const MobileMenu = ({
   setIsMobileMenuOpen,
-  setIsBorder,
 }) => {
   const enableScroll = () => {
     document.body.style.overflow = "";
@@ -14,19 +13,6 @@ export const MobileMenu = ({
     setIsMobileMenuOpen(false);
     enableScroll();
   }, [setIsMobileMenuOpen]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsBorder(true);
-      } else {
-        setIsBorder(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [setIsBorder]);
 
   useEffect(() => {
     const handleWindowResize = () => {
