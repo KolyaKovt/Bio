@@ -25,8 +25,8 @@ const Home = () => {
       <Section>
         <StyledH2>So who am I?</StyledH2>
         <StyledP>
-          My name is Kolya. I'm {age} and I'm from Kharkiv (Ukraine). I live in
-          the Netherladns. It's a beatiful country in the western Europe.
+          My name is Kolya. I&apos;m {age} and I&apos;m from Kharkiv (Ukraine). I live in
+          the Netherladns. It&apos;s a beatiful country in the western Europe.
         </StyledP>
         <StyledImg src={"/selfie.jpg"} alt="me" width={280} />
       </Section>
