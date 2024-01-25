@@ -1,21 +1,21 @@
-import Section from "../../components/Section/Section";
+import Section from "../../components/Section/Section"
 import {
   StyledH1,
   StyledH2,
   StyledImg,
   StyledP,
   StyledA,
-} from "../../components/Section/Section.styled";
+} from "../../components/Section/Section.styled"
 
-import "basiclightbox/dist/basicLightbox.min.css";
-import "basiclightbox/dist/basicLightbox.min";
-import * as basicLightbox from "basiclightbox";
+import "basiclightbox/dist/basicLightbox.min.css"
+import "basiclightbox/dist/basicLightbox.min"
+import * as basicLightbox from "basiclightbox"
 
 const Portfolio = () => {
   const onImgClick = (url, alt) => {
     const closeModal = e => {
-      if (e.code === "Escape") instance.close();
-    };
+      if (e.code === "Escape") instance.close()
+    }
 
     const instance = basicLightbox.create(
       `
@@ -23,29 +23,29 @@ const Portfolio = () => {
     `,
       {
         onShow: () => {
-          document.addEventListener("keydown", closeModal);
-          document.body.style.overflow = "hidden";
+          document.addEventListener("keydown", closeModal)
+          document.body.style.overflow = "hidden"
         },
         onClose: () => {
-          document.removeEventListener("keydown", closeModal);
-          document.body.style.overflow = "";
+          document.removeEventListener("keydown", closeModal)
+          document.body.style.overflow = ""
         },
       }
-    );
+    )
 
-    instance.show();
-  };
+    instance.show()
+  }
 
   return (
     <>
       <Section>
         <StyledH1>My portfolio</StyledH1>
-        <StyledP>Here you can check out the projects I've made.</StyledP>
+        <StyledP>Here you can check out the projects I&apos;ve made.</StyledP>
       </Section>
       <Section>
         <StyledH2>Web Studio</StyledH2>
         <StyledP>
-          That's the project I made during the HTML & CSS module.{" "}
+          That&apos;s the project I did during the HTML & CSS module.{" "}
           <StyledA
             href="https://kolyakovt.github.io/web-studio-portfolio/"
             target="_blank"
@@ -70,8 +70,10 @@ const Portfolio = () => {
       <Section>
         <StyledH2>Yachts Jet</StyledH2>
         <StyledP>
-          This one we also made during the HTML & CSS module. But this one was a
-          team project. What sets it apart is that I was the team lead here.{" "}
+          This project was also made during the HTML & CSS module. But this one
+          was a team project, where I was the team lead, and as the team lead, I
+          participated in all aspects of the project, but sections such as
+          header and footer I made by myself.{" "}
           <StyledA
             href="https://kolyakovt.github.io/yacht-jet-portfolio/"
             target="_blank"
@@ -96,9 +98,9 @@ const Portfolio = () => {
       <Section>
         <StyledH2>Food Boutique</StyledH2>
         <StyledP>
-          This project was made during the JavaScript module, and what makes it
-          special is that my brother and I tackled it as a dynamic duo, just the
-          two of us.{" "}
+          This project was done during the JavaScript module, and what makes it
+          special is that my brother and I have completed it as a duo. I made
+          sections such as: Header, Hero, Filter and Products. I also made the Cart page.{" "}
           <StyledA
             href="https://yellowflash1040.github.io/FoodBoutique/"
             target="_blank"
@@ -124,7 +126,7 @@ const Portfolio = () => {
         />
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio
