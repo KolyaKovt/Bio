@@ -1,4 +1,4 @@
-import Section from "../../components/Section/Section";
+import Section from "../../components/Section/Section"
 import {
   StyledH1,
   StyledH2,
@@ -6,7 +6,7 @@ import {
   StyledLink,
   StyledP,
   StyledList,
-} from "../../components/Section/Section.styled";
+} from "../../components/Section/Section.styled"
 
 const Skills = () => {
   return (
@@ -25,8 +25,8 @@ const Skills = () => {
           <StyledA href="https://kitit.com.ua/" target="_blank">
             KitIt
           </StyledA>
-          . I've learned a lot there. Starting from varriables and ending with
-          object-oriented programming.
+          . I&apos;ve learned a lot there. Starting from varriables and ending
+          with object-oriented programming.
         </StyledP>
       </Section>
       <Section>
@@ -47,13 +47,13 @@ const Skills = () => {
       <Section>
         <StyledH2>Team work and leadership.</StyledH2>
         <StyledP>
-          Right now, I'm doing a Fullstack course at{" "}
+          Right now, I&apos;m doing a Fullstack course at{" "}
           <StyledA href="https://fullstack.lp.goit.global/us/" target="_blank">
             GoIt
           </StyledA>
-          . We're covering basics like HTML, CSS, JS, React, TypeScript, and
-          NodeJs. For each of these technology we work on a team project. I've
-          been a team lead twice now.
+          . We&apos;re covering basics like HTML, CSS, JS, React, TypeScript,
+          and NodeJs. For each of these technology we work on a team project.
+          I&apos;ve been a team lead twice now.
         </StyledP>
       </Section>
       <Section>
@@ -67,15 +67,15 @@ const Skills = () => {
       <Section>
         <StyledH2>Summary</StyledH2>
         <StyledList>
-          <li>C#(OOP)</li>
           <li>HTML & CSS</li>
           <li>JavaScript</li>
           <li>React</li>
-          <li>NodeJs</li>
+          <li>RTK</li>
+          <li>Node JS</li>
         </StyledList>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills
