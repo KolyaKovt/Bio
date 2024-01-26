@@ -10,8 +10,8 @@ const Navigation = ({ closeMobileMenu }) => {
           </StyledLink>
         </li>
         <li>
-          <StyledLink to="/hobbies" onClick={closeMobileMenu}>
-            Hobbies
+          <StyledLink to="/portfolio" onClick={closeMobileMenu}>
+            Portfolio
           </StyledLink>
         </li>
         <li>
@@ -20,8 +20,8 @@ const Navigation = ({ closeMobileMenu }) => {
           </StyledLink>
         </li>
         <li>
-          <StyledLink to="/portfolio" onClick={closeMobileMenu}>
-            Portfolio
+          <StyledLink to="/hobbies" onClick={closeMobileMenu}>
+            Hobbies
           </StyledLink>
         </li>
       </StyledList>

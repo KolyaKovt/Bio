@@ -23,10 +23,10 @@ const App = () => {
             }
           />
           <Route
-            path="/hobbies"
+            path="/portfolio"
             element={
               <Suspense fallback={<Loading />}>
-                <Hobbies />
+                <Portfolio />
               </Suspense>
             }
           />
@@ -39,10 +39,10 @@ const App = () => {
             }
           />
           <Route
-            path="/portfolio"
+            path="/hobbies"
             element={
               <Suspense fallback={<Loading />}>
-                <Portfolio />
+                <Hobbies />
               </Suspense>
             }
           />
