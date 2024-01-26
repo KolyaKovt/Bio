@@ -2,10 +2,10 @@ import { ThemeContext } from "../../context/themeContext"
 import { useTheme } from "../../hooks/useTheme"
 
 export const ThemeContextProvider = ({ children }) => {
-  const { toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
   return (
-    <ThemeContext.Provider value={{ toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   )
