@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
+import { useLocalStorage } from "./useLocalStorage"
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useLocalStorage("theme", "dark")
 
   useEffect(() => {
     if (theme === "dark") {
@@ -26,7 +27,6 @@ export const useTheme = () => {
         "#149eca"
       )
       document.documentElement.style.setProperty("--text-color", "#23272f")
-      document.documentElement.style.setProperty("--paragraph-color", "23272F")
       document.documentElement.style.setProperty("--btn-focus-color", "#E6F7FF")
       document.documentElement.style.setProperty("--border-color", "#EBECF0")
     }
