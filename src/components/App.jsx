@@ -3,18 +3,15 @@ import { Route, Routes } from "react-router-dom"
 import { lazy, Suspense } from "react"
 import Loading from "../components/Loading/Loading"
 import Layout from "./Layout/Layout"
+import { ThemeContextProvider } from "./ThemeContextProvider/ThemeContextProvider"
 const Home = lazy(() => import("../pages/Home/Home"))
 const Hobbies = lazy(() => import("../pages/Hobbies/Hobbies"))
 const Skills = lazy(() => import("../pages/Skills/Skills"))
 const Portfolio = lazy(() => import("../pages/Portfolio/Portfolio"))
-import { ThemeContext } from "../context/themeContext.js"
-import { useTheme } from "../hooks/useTheme.js"
 
 const App = () => {
-  const { theme, toggleTheme } = useTheme()
-
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContextProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route
@@ -51,7 +48,7 @@ const App = () => {
           />
         </Route>
       </Routes>
-    </ThemeContext.Provider>
+    </ThemeContextProvider>
   )
 }
 

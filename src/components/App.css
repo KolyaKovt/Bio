@@ -1,10 +1,5 @@
 :root {
-  --primary-bg-color: #23272f;
-  --secondary-bg-color: #149eca;
   --header-height: 64px;
-  --text-color: #f6f7f9;
-  --btn-focus-color: #2d323b;
-  --border-color: #343a46;
   --theme-transition-properties: color 200ms linear, background-color 200ms linear;
 }
 
@@ -30,13 +25,6 @@
   font-family: "PalanquinDark";
   src: url("/PalanquinDark/PalanquinDark-Bold.woff") format("woff");
   font-weight: 700; /* Bold weight */
-}
-
-body {
-  font-family: "PalanquinDark", sans-serif;
-  background-color: var(--primary-bg-color);
-  color: var(--text-color);
-  transition: var(--theme-transition-properties);
 }
 
 #root {

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
   display: flex;
@@ -10,4 +10,4 @@ export const StyledFooter = styled.footer`
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-`;
+`

@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
   height: var(--header-height);
   padding: 0 6px;
   border-bottom: ${({ $isBorder }) =>
-    $isBorder ? "1px solid var(--border-color)" : "none"};
+    $isBorder ? `1px solid var(--border-color)` : "none"};
   box-shadow: ${({ $isBorder }) =>
     $isBorder
       ? "0 16px 32px -16px rgba(0, 0, 0, 0.1);"
