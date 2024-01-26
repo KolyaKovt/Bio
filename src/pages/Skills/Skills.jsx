@@ -60,12 +60,12 @@ const Skills = () => {
         <StyledH2>Portfolio projects</StyledH2>
         <StyledP>
           As mentioned earlier, we work on a team project for each technology we
-          learn. You can check them out{" "}
+          learn. You can check out my portfolio {" "}
           <StyledLink to={"/portfolio"}>here</StyledLink>.
         </StyledP>
       </Section>
       <Section>
-        <StyledH2>Summary</StyledH2>
+        <StyledH2>Technical skills: </StyledH2>
         <StyledList>
           <li>HTML & CSS</li>
           <li>JavaScript</li>
