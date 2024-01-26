@@ -1,6 +1,7 @@
 :root {
   --header-height: 64px;
-  --theme-transition-properties: color 200ms linear, background-color 200ms linear;
+  --theme-transition-properties: color 200ms linear,
+    background-color 200ms linear;
 }
 
 @font-face {
@@ -25,6 +26,13 @@
   font-family: "PalanquinDark";
   src: url("/PalanquinDark/PalanquinDark-Bold.woff") format("woff");
   font-weight: 700; /* Bold weight */
+}
+
+body {
+  font-family: "PalanquinDark", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  transition: var(--theme-transition-properties);
 }
 
 #root {
