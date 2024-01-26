@@ -5,6 +5,7 @@ import Navigation from "../Navigation/Navigation.jsx"
 import Media from "react-media"
 import MobileMenuBtn from "../MobileMenuBtn/MobileMenuBtn.jsx"
 import { HeaderSocials } from "../HeaderSocials/HeaderSocials.jsx"
+import throttle from "lodash.throttle"
 
 const Header = () => {
   const [isBorder, setIsBorder] = useState(false)
@@ -19,8 +20,9 @@ const Header = () => {
       }
     }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    const throttleHandler = throttle(handleScroll)
+    window.addEventListener("scroll", throttleHandler)
+    return () => window.removeEventListener("scroll", throttleHandler)
   }, [setIsBorder])
 
   return (
