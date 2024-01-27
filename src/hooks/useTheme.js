@@ -3,8 +3,6 @@ import { useLocalStorage } from "./useLocalStorage"
 
 export const useTheme = () => {
   const [userTheme] = useState(() => {
-    console.log(window.matchMedia("(prefers-color-scheme: dark)"))
-
     if (
       window.matchMedia("(prefers-color-scheme: dark)")?.matches
     ) {
