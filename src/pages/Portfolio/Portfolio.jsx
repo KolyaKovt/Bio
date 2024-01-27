@@ -4,7 +4,9 @@ import {
   StyledH2,
   StyledImg,
   StyledP,
+  StyledPWithMargin,
   StyledA,
+  StyledImgWithPadding,
 } from "../../components/Section/Section.styled"
 
 import "basiclightbox/dist/basicLightbox.min.css"
@@ -44,7 +46,7 @@ const Portfolio = () => {
       </Section>
       <Section>
         <StyledH2>Web Studio</StyledH2>
-        <StyledP>
+        <StyledPWithMargin>
           That&apos;s the project I did during the HTML & CSS module.{" "}
           <StyledA
             href="https://kolyakovt.github.io/web-studio-portfolio/"
@@ -60,16 +62,14 @@ const Portfolio = () => {
             Repo
           </StyledA>
           .
-        </StyledP>
-        <StyledImg
+        </StyledPWithMargin>
+        <StyledImgWithPadding
           src="/Portfolio/web-studio-mobile.jpg"
           alt="web studio"
           onClick={() => onImgClick("/Portfolio/web-studio.jpg", "web studio")}
         />
-      </Section>
-      <Section>
         <StyledH2>Yachts Jet</StyledH2>
-        <StyledP>
+        <StyledPWithMargin>
           This project was also made during the HTML & CSS module. But this one
           was a team project, where I was the team lead, and as the team lead, I
           participated in all aspects of the project, but sections such as
@@ -88,19 +88,18 @@ const Portfolio = () => {
             Repo
           </StyledA>
           .
-        </StyledP>
-        <StyledImg
+        </StyledPWithMargin>
+        <StyledImgWithPadding
           src="/Portfolio/jachts-jet-mobile.jpg"
           alt="jachts jet"
           onClick={() => onImgClick("/Portfolio/jachts-jet.jpg", "jachts jet")}
         />
-      </Section>
-      <Section>
         <StyledH2>Food Boutique</StyledH2>
-        <StyledP>
+        <StyledPWithMargin>
           This project was done during the JavaScript module, and what makes it
           special is that my brother and I have completed it as a duo. I made
-          sections such as: Header, Hero, Filter and Products. I also made the Cart page.{" "}
+          sections such as: Header, Hero, Filter and Products. I also made the
+          Cart page.{" "}
           <StyledA
             href="https://yellowflash1040.github.io/FoodBoutique/"
             target="_blank"
@@ -115,8 +114,7 @@ const Portfolio = () => {
             Repo
           </StyledA>
           .
-        </StyledP>
-
+        </StyledPWithMargin>
         <StyledImg
           src="/Portfolio/food-bootique-mobile.jpg"
           alt="food bootique"

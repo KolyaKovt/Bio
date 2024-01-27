@@ -4,6 +4,7 @@ import {
   StyledH2,
   StyledImg,
   StyledP,
+  StyledPWithMargin,
   StyledVideo,
 } from "../../components/Section/Section.styled"
 
@@ -18,10 +19,10 @@ const Hobbies = () => {
       </Section>
       <Section>
         <StyledH2>Guitar🎸</StyledH2>
-        <StyledP>
+        <StyledPWithMargin>
           I play guitar. I met a good guitar teacher back in Germany, and he
           taught me some guitar basics.
-        </StyledP>
+        </StyledPWithMargin>
         <StyledVideo
           src="https://www.youtube.com/embed/DjAozIqOfO8"
           type="video/mp4"
@@ -31,11 +32,11 @@ const Hobbies = () => {
       </Section>
       <Section>
         <StyledH2>Volleyball🏐</StyledH2>
-        <StyledP>
+        <StyledPWithMargin>
           After a long day behind the computer, there&apos;s nothing better than
           playing volleyball. I enjoy sports in general, but volleyball holds a
           special place for me.
-        </StyledP>
+        </StyledPWithMargin>
         <picture>
           <source srcSet="avior-mobile.jpg" media="(max-width: 767px)" />
 

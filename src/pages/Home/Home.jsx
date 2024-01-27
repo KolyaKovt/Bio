@@ -4,6 +4,7 @@ import {
   StyledH2,
   StyledImg,
   StyledP,
+  StyledPWithMargin,
 } from "../../components/Section/Section.styled"
 
 const Home = () => {
@@ -18,11 +19,11 @@ const Home = () => {
       </Section>
       <Section>
         <StyledH2>So who am I?</StyledH2>
-        <StyledP>
+        <StyledPWithMargin>
           My name is Kolya. I&apos;ve been coding since I was 13. My first
           programming language is C#. I speak four languages: Russian (native),
           Ukrainian (native), English (b2) and Dutch (b2).
-        </StyledP>
+        </StyledPWithMargin>
         <StyledImg src={"/selfie.jpg"} alt="me" width={280} />
       </Section>
     </>
