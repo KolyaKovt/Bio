@@ -1,8 +1,20 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useLocalStorage } from "./useLocalStorage"
 
 export const useTheme = () => {
-  const [theme, setTheme] = useLocalStorage("theme", "dark")
+  const [userTheme] = useState(() => {
+    console.log(window.matchMedia("(prefers-color-scheme: dark)"))
+
+    if (
+      window.matchMedia("(prefers-color-scheme: dark)")?.matches
+    ) {
+      return "dark"
+    }
+
+    return "light"
+  })
+
+  const [theme, setTheme] = useLocalStorage("theme", userTheme)
 
   useEffect(() => {
     if (theme === "dark") {
