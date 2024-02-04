@@ -1,6 +1,7 @@
 import { useCallback, useEffect } from "react"
 import Navigation from "../Navigation/Navigation"
 import { StyledBackdrop } from "./MobileMenu.styled"
+import throttle from "lodash.throttle"
 
 export const MobileMenu = ({ setIsMobileMenuOpen }) => {
   const enableScroll = () => {
@@ -19,8 +20,9 @@ export const MobileMenu = ({ setIsMobileMenuOpen }) => {
       }
     }
 
-    window.addEventListener("resize", handleWindowResize)
-    return () => window.removeEventListener("resize", handleWindowResize)
+    const throttleHandler = throttle(handleWindowResize)
+    window.addEventListener("resize", throttleHandler)
+    return () => window.removeEventListener("resize", throttleHandler)
   }, [closeMobileMenu])
 
   return (
