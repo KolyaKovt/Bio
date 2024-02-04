@@ -46,9 +46,9 @@ const Hobbies = () => {
       <Section>
         <StyledH2>Programming💻</StyledH2>
         <StyledP>
-          Believe it or not, programming is more than just a job for me, it&apos;s a
-          hobby too. I like beeing able to change something on a computer, make
-          it work different.
+          Believe it or not, programming is more than just a job for me,
+          it&apos;s a hobby too. I like beeing able to change something on a
+          computer, make it work different.
         </StyledP>
       </Section>
     </>

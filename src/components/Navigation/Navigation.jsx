@@ -1,4 +1,4 @@
-import { StyledLink, StyledList } from "./Navigation.styled";
+import { StyledLink, StyledList } from "./Navigation.styled"
 
 const Navigation = ({ closeMobileMenu }) => {
   return (
@@ -26,7 +26,7 @@ const Navigation = ({ closeMobileMenu }) => {
         </li>
       </StyledList>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

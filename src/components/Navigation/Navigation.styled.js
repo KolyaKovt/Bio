@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from "styled-components"
+import { NavLink } from "react-router-dom"
 
 export const StyledList = styled.ul`
   font-size: 20px;
@@ -9,7 +9,7 @@ export const StyledList = styled.ul`
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
-`;
+`
 
 export const StyledLink = styled(NavLink)`
   display: block;
@@ -21,9 +21,9 @@ export const StyledLink = styled(NavLink)`
   &:focus {
     background-color: var(--btn-focus-color);
   }
-  
+
   &.active {
     color: var(--secondary-bg-color);
     background-color: var(--btn-focus-color);
   }
-`;
+`

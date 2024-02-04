@@ -1,5 +1,5 @@
-import { FooterSocials } from "../FooterSocials/FooterSocials";
-import { StyledFooter } from "./Footer.styled";
+import { FooterSocials } from "../FooterSocials/FooterSocials"
+import { StyledFooter } from "./Footer.styled"
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <p>&#169; KolyaKovt</p>
       <FooterSocials />
     </StyledFooter>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

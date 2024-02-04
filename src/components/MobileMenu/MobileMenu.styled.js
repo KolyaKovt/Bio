@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledBackdrop = styled.div`
   position: fixed;
@@ -12,4 +12,4 @@ export const StyledBackdrop = styled.div`
   @media screen and (min-width: 768px) {
     display: none;
   }
-`;
+`

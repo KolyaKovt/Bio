@@ -1,20 +1,20 @@
-import { StyledButton, StyledSvg } from "../Header/Header.styled";
+import { StyledButton, StyledSvg } from "../Header/Header.styled"
 
 const MobileMenuBtn = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
   const toggleScroll = () => {
     if (document.body.style.overflow !== "hidden") {
-      document.body.style.overflow = "hidden";
-    } else document.body.style.overflow = "";
-  };
+      document.body.style.overflow = "hidden"
+    } else document.body.style.overflow = ""
+  }
 
   const toggleIsMobileOpen = () => {
-    setIsMobileMenuOpen(prev => !prev);
-    toggleScroll();
-  };
+    setIsMobileMenuOpen(prev => !prev)
+    toggleScroll()
+  }
 
   const btnSvgHref = isMobileMenuOpen
     ? "/icons.svg#close-menu"
-    : "/icons.svg#open-menu";
+    : "/icons.svg#open-menu"
 
   return (
     <StyledButton
@@ -26,7 +26,7 @@ const MobileMenuBtn = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
         <use href={btnSvgHref}></use>
       </StyledSvg>
     </StyledButton>
-  );
-};
+  )
+}
 
-export default MobileMenuBtn;
+export default MobileMenuBtn
