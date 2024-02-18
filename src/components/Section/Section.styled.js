@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
   }
 
   &:last-child {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 `
 
@@ -27,14 +27,33 @@ export const StyledContainer = styled.div`
   }
 `
 
-export const StyledH1 = styled.h1`
+const primaryTitle = css`
   font-size: 36px;
   margin-bottom: 16px;
 `
 
-export const StyledH2 = styled.h2`
+export const StyledH1 = styled.h1`
+  ${primaryTitle}
+`
+export const StyledPrimaryTitleH2 = styled.h2`
+  ${primaryTitle}
+`
+
+export const StyledSecondaryTitle = styled.h2`
   font-size: 28px;
   margin-bottom: 16px;
+`
+
+export const StyledProjectsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+`
+
+export const StyledSkillsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 `
 
 export const StyledP = styled.p`
@@ -46,20 +65,12 @@ export const StyledPWithMargin = styled(StyledP)`
   margin-bottom: 16px;
 `
 
-export const StyledPWithMoreMargin = styled(StyledP)`
-  margin-bottom: 30px;
-`
-
 const borderRadius = css`
   border-radius: 10px;
 `
 
 export const StyledImg = styled.img`
   ${borderRadius}
-`
-
-export const StyledImgWithPadding = styled(StyledImg)`
-  margin-bottom: 40px;
 `
 
 const linkStyles = css`
@@ -86,12 +97,4 @@ export const StyledList = styled.ul`
   gap: 10px;
   list-style: disc;
   padding-left: 40px;
-`
-export const StyledListWithMargin = styled(StyledList)`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  list-style: disc;
-  padding-left: 40px;
-  margin-bottom: 30px;
 `

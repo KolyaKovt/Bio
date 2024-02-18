@@ -1,7 +1,7 @@
 import Section from "../../components/Section/Section"
 import {
   StyledH1,
-  StyledH2,
+  StyledSecondaryTitle,
   StyledImg,
   StyledP,
   StyledPWithMargin,
@@ -18,7 +18,7 @@ const Hobbies = () => {
         </StyledP>
       </Section>
       <Section>
-        <StyledH2>Guitar🎸</StyledH2>
+        <StyledSecondaryTitle>Guitar🎸</StyledSecondaryTitle>
         <StyledPWithMargin>
           I play guitar. I met a good guitar teacher back in Germany, and he
           taught me some guitar basics.
@@ -31,7 +31,7 @@ const Hobbies = () => {
         ></StyledVideo>
       </Section>
       <Section>
-        <StyledH2>Volleyball🏐</StyledH2>
+        <StyledSecondaryTitle>Volleyball🏐</StyledSecondaryTitle>
         <StyledPWithMargin>
           After a long day behind the computer, there&apos;s nothing better than
           playing volleyball. I enjoy sports in general, but volleyball holds a
@@ -44,7 +44,7 @@ const Hobbies = () => {
         </picture>
       </Section>
       <Section>
-        <StyledH2>Programming💻</StyledH2>
+        <StyledSecondaryTitle>Programming💻</StyledSecondaryTitle>
         <StyledP>
           Believe it or not, programming is more than just a job for me,
           it&apos;s a hobby too. I like beeing able to change something on a

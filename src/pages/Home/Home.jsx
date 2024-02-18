@@ -1,7 +1,7 @@
 import Section from "../../components/Section/Section"
 import {
   StyledH1,
-  StyledH2,
+  StyledSecondaryTitle,
   StyledImg,
   StyledP,
   StyledPWithMargin,
@@ -18,7 +18,7 @@ const Home = () => {
         </StyledP>
       </Section>
       <Section>
-        <StyledH2>So who am I?</StyledH2>
+        <StyledSecondaryTitle>So who am I?</StyledSecondaryTitle>
         <StyledPWithMargin>
           My name is Kolya. I&apos;ve been coding since I was 13. My first
           programming language is C#. I speak four languages: Russian (native),
