@@ -56,7 +56,7 @@ const Portfolio = () => {
               </StyledA>
               .{" "}
               <StyledA
-                href="https://project-capybara-66-rust.vercel.app"
+                href="https://github.com/ZhurbeyArtem/project-Capybara-66"
                 target="_blank"
               >
                 Repo
