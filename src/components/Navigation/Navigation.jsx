@@ -9,7 +9,7 @@ const Navigation = ({ closeMobileMenu }) => {
             Home
           </StyledLink>
         </li>
-        <li>
+        {/* <li>
           <StyledLink to="/portfolio" onClick={closeMobileMenu}>
             Portfolio
           </StyledLink>
@@ -18,7 +18,7 @@ const Navigation = ({ closeMobileMenu }) => {
           <StyledLink to="/skills" onClick={closeMobileMenu}>
             Skills & Experience
           </StyledLink>
-        </li>
+        </li> */}
         <li>
           <StyledLink to="/contact" onClick={closeMobileMenu}>
             Contact
