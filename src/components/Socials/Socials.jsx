@@ -4,21 +4,21 @@ export const Socials = () => {
   return (
     <>
       <StyledLink
-        href={"https://www.linkedin.com/in/mykola-kovtunets-57081329b/"}
+        href={"https://youtube.com/@kolyakovt/"}
         target="_blank"
-        aria-label="linkedin"
+        aria-label="youtube"
       >
         <StyledSvg>
-          <use href="/icons.svg#linkedin"></use>
+          <use href="/icons.svg#youtube"></use>
         </StyledSvg>
       </StyledLink>
       <StyledLink
-        href={"https://github.com/KolyaKovt"}
+        href={"https://www.tiktok.com/@kolyakovt"}
         target="_blank"
-        aria-label="github"
+        aria-label="tiktok"
       >
         <StyledSvg>
-          <use href="/icons.svg#github"></use>
+          <use href="/icons.svg#tiktok"></use>
         </StyledSvg>
       </StyledLink>
     </>

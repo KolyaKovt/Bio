@@ -32,14 +32,14 @@ const Contact = () => {
       </Section>
       <Section>
         <StyledSecondaryTitle>Phone📞</StyledSecondaryTitle>
-        <StyledPWithMargin>
+        <StyledP>
           <StyledP>
             <StyledA href="tel:+380666875479">+380 66 687 54 79</StyledA>
           </StyledP>
           <StyledP>
             <StyledA href="tel:+31683490888">+31 68 349 08 88</StyledA>
           </StyledP>
-        </StyledPWithMargin>
+        </StyledP>
         {/* <picture>
           <source srcSet="avior-mobile.jpg" media="(max-width: 767px)" />
 
