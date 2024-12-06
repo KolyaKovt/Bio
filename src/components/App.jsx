@@ -5,7 +5,7 @@ import Loading from "../components/Loading/Loading"
 import Layout from "./Layout/Layout"
 import { ThemeContextProvider } from "./ThemeContextProvider/ThemeContextProvider"
 const Home = lazy(() => import("../pages/Home/Home"))
-const Hobbies = lazy(() => import("../pages/Hobbies/Hobbies"))
+const Contact = lazy(() => import("../pages/Contact/Contact"))
 const Skills = lazy(() => import("../pages/Skills/Skills"))
 const Portfolio = lazy(() => import("../pages/Portfolio/Portfolio"))
 
@@ -39,10 +39,10 @@ const App = () => {
             }
           />
           <Route
-            path="/hobbies"
+            path="/contact"
             element={
               <Suspense fallback={<Loading />}>
-                <Hobbies />
+                <Contact />
               </Suspense>
             }
           />
